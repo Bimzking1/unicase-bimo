@@ -19,7 +19,7 @@ const Home = () => {
         <a href='https://wa.me/6287840758430' target="_blank">
             <img
                 src={WhatsApp}
-                className={`${style.whatsapp} absolute z-50 h-[60px] lg:h-[80px] bottom-5 right-5 hover:h-[100px] duration-500`}
+                className={`${style.whatsapp} fixed z-50 h-[60px] lg:h-[80px] bottom-5 right-5 hover:h-[100px] duration-500`}
             />
         </a>
 
