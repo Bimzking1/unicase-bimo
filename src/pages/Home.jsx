@@ -6,6 +6,8 @@ import Tokopedia from '../assets/tokped.png'
 import Shopee from '../assets/shopee.png'
 import Cabang from '../assets/cabang.jpg'
 import ProductsAmount from '../components/ProductsAmount'
+import { FaRegHandPointDown } from "react-icons/fa";
+import style from "./../style/style.module.css"
 
 const Home = () => {
   return (
@@ -20,8 +22,12 @@ const Home = () => {
                         <div className='w-full rounded-lg text-gray-100 text-6xl font-bold pt-4 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,2)]'>
                             Spesial Diskon bulan ini!
                         </div>
-                        <div className='w-full rounded-lg text-gray-100 text-xl pt-0 md:pt-4 mt-8 md:mt-0'>
-                            Scroll down below !
+                        <div className='flex justify-center items-center gap-4 w-full rounded-lg text-gray-100 text-xl pt-0 md:pt-4 mt-4 md:mt-0'>
+                            <FaRegHandPointDown className={`${style.element} text-yellow-500`}/>
+                            <div>
+                                Scroll down below !
+                            </div>
+                            <FaRegHandPointDown className={`${style.element} text-yellow-500`}/>
                         </div>
                     </div>
                     <div className='flex flex-col px-4 lg:w-1/2 lg:px-0 xl:w-1/3'>

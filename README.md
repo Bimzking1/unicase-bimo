@@ -1,12 +1,14 @@
 # Unicase FE Test
 
-## Teknologi yang digunakan:
+### Link Deployment Netlify: https://unicase-bimo.netlify.app/
 
-### 1. React JS
-### 2. Tailwind
+#### Teknologi yang digunakan:
 
-## Library tambahan yang digunakan:
+1. React JS
+2. Tailwind
 
-### 1. React Icons
-### 2. React Charts
-### 3. React Router
+#### Library tambahan yang digunakan:
+
+1. React Icons
+2. React Charts
+3. React Router

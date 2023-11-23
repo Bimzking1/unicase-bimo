@@ -38,7 +38,6 @@ const Products = () => {
 
     const chooseBoxView = () => {
         setBoxView(!boxView)
-        console.log('boxview ;', boxView)
     }
     
     return (
@@ -197,7 +196,7 @@ const Products = () => {
                                                     <div className='w-full md:w-[150px] xl:w-[100px] px-4 pt-4 flex justify-center items-start md:items-center'>
                                                         <img
                                                             src={current.primary_image.resize300}
-                                                            className='rounded-t-xl border-2'
+                                                            className='rounded-xl border-2'
                                                         />
                                                     </div>
                                                     <div className='w-full flex flex-col xl:flex-row justify-between'>
@@ -210,7 +209,7 @@ const Products = () => {
                                                             </div>
                                                         </div>
                                                         <div className='xl:flex xl:flex-col xl:items-end'>
-                                                            <div className='hidden md:flex gap-4 text-lg mt-2 xl:mt-3 px-4 flex justify-start items-center'>
+                                                            <div className='gap-2 text-lg mt-2 xl:mt-3 md:px-4 xl:px-4 flex flex-col justify-start items-start xl:items-end'>
                                                                 <div className=''>
                                                                     {
                                                                         current.stats.rating >= 90 &&
@@ -284,7 +283,7 @@ const Products = () => {
                                                             </div>
                                                             {
                                                                 current.label_groups[0].title == "Stok Habis" ?
-                                                                <div className={`text-red-500 text-md font-semibold mt-2 px-4`}>
+                                                                <div className={`text-red-500 text-md font-semibold mt-2 px-0 md:px-4`}>
                                                                     Stok Habis
                                                                 </div>
                                                                 :
