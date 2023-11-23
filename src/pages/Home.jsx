@@ -8,6 +8,7 @@ import Cabang from '../assets/cabang.jpg'
 import ProductsAmount from '../components/ProductsAmount'
 import { FaRegHandPointDown } from "react-icons/fa";
 import style from "./../style/style.module.css"
+import WhatsApp from '../assets/whatsapp.png'
 
 const Home = () => {
   return (
@@ -15,14 +16,21 @@ const Home = () => {
         <div id="home"></div>
         <Navbar className='z-50 top-0'/>
 
+        <a href='https://wa.me/6287840758430' target="_blank">
+            <img
+                src={WhatsApp}
+                className={`${style.whatsapp} absolute z-50 h-[60px] lg:h-[80px] bottom-5 right-5 hover:h-[100px] duration-500`}
+            />
+        </a>
+
         <div className='flex w-full flex-col justify-center z-0'>
             <div className='bg-uni bg-no-repeat bg-cover w-full flex flex-col items-center justify-center h-screen'>
                 <div className='md:mt-2 z-0 mb-4 w-full md:w-4/5 flex flex-col justify-center md:w-1/2 md:justify-start'>
-                    <div className='text-center md:text-start w-full lg:w-1/2 rounded-lg text-gray-800 text-xl'>
+                    <div className='text-center lg:text-start w-full lg:w-1/2 rounded-lg text-gray-800 text-xl'>
                         <div className='w-full rounded-lg text-gray-100 text-6xl font-bold pt-4 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,2)]'>
                             Spesial Diskon bulan ini!
                         </div>
-                        <div className='flex justify-center items-center gap-4 w-full rounded-lg text-gray-100 text-xl pt-0 md:pt-4 mt-4 md:mt-0'>
+                        <div className='flex justify-center items-center lg:justify-start gap-4 w-full rounded-lg text-gray-100 text-xl pt-0 md:pt-4 mt-4 md:mt-0'>
                             <FaRegHandPointDown className={`${style.element} text-yellow-500`}/>
                             <div>
                                 Scroll down below !

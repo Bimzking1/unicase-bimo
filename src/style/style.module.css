@@ -2,10 +2,10 @@
     height: auto;
     width: auto;
     animation: 
-      nudge 2s linear infinite alternate;
-  }
-  
-  @keyframes nudge {
+    nudge 2s linear infinite alternate;
+}
+
+@keyframes nudge {
     0%, 100% {
         transform: translate(0, 0);
     }
@@ -17,4 +17,23 @@
     80% {
         transform: translateY(10px);
     }
-  }
+}
+
+.whatsapp {
+    animation: 
+    nudges 2s linear infinite alternate;
+}
+
+@keyframes nudges {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    
+    50% {
+        transform: translate(10px);
+    }
+    
+    80% {
+        transform: translate(10px);
+    }
+}
